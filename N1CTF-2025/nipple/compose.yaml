@@ -1,0 +1,8 @@
+services:
+  nipple:
+    build: .
+    priviledged: true
+    devices:
+      - /dev/net/tun
+    cap-add:
+      - mknod
